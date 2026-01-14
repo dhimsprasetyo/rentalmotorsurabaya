@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://rentalmotorsurabaya.com/</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rentalmotorsurabaya.com/og-image.jpg</image:loc>
+      <image:title>Rental Motor Surabaya RMR 2</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Motor Listing Page -->
+  <url>
+    <loc>https://rentalmotorsurabaya.com/motor</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rentalmotorsurabaya.com/motors/pcx.png</image:loc>
+      <image:title>Honda PCX 160 Sewa Surabaya</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://rentalmotorsurabaya.com/motors/nmax.png</image:loc>
+      <image:title>Yamaha NMAX Sewa Surabaya</image:title>
+    </image:image>
+  </url>
+  
+  <!-- How to Rent Page -->
+  <url>
+    <loc>https://rentalmotorsurabaya.com/cara-sewa</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Testimonials Page -->
+  <url>
+    <loc>https://rentalmotorsurabaya.com/testimoni</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://rentalmotorsurabaya.com/tentang</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://rentalmotorsurabaya.com/kontak</loc>
+    <lastmod>2026-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>

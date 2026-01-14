@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: ./frontend
+    container_name: rmr2_frontend
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://backend:3001
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    container_name: rmr2_backend
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DATABASE_URL=postgresql://admin:secret@postgres:5432/rmr2
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:15
+    container_name: rmr2_db
+    restart: always
+    environment:
+      POSTGRES_DB: rmr2
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  nginx:
+    image: nginx:alpine
+    container_name: rmr2_nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/nginx:/etc/nginx/conf.d
+    depends_on:
+      - frontend
+      - backend
+
+volumes:
+  pgdata:

@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name": "Honda Beat",
+        "category": "matic-standard",
+        "categoryLabel": "Matic Standard",
+        "image": "/motors/beat.png",
+        "features": [
+            "Irit BBM",
+            "Nyaman dikendarai",
+            "Bagasi luas",
+            "Cocok untuk harian"
+        ],
+        "cc": 110,
+        "fuelType": "Bensin",
+        "transmission": "Otomatis"
+    },
+    {
+        "id": 2,
+        "name": "Honda Vario 125",
+        "category": "matic-standard",
+        "categoryLabel": "Matic Standard",
+        "image": "/motors/vario.png",
+        "features": [
+            "Mesin 125cc",
+            "Akselerasi responsif",
+            "Desain sporty",
+            "ISS (Idling Stop System)"
+        ],
+        "cc": 125,
+        "fuelType": "Bensin",
+        "transmission": "Otomatis"
+    },
+    {
+        "id": 3,
+        "name": "Yamaha Mio",
+        "category": "matic-standard",
+        "categoryLabel": "Matic Standard",
+        "image": "/motors/mio.png",
+        "features": [
+            "Ringan & lincah",
+            "Irit BBM",
+            "Mudah dikendarai",
+            "Cocok untuk pemula"
+        ],
+        "cc": 115,
+        "fuelType": "Bensin",
+        "transmission": "Otomatis"
+    },
+    {
+        "id": 4,
+        "name": "Yamaha NMAX",
+        "category": "matic-premium",
+        "categoryLabel": "Matic Premium",
+        "image": "/motors/nmax.png",
+        "features": [
+            "Mesin 155cc VVA",
+            "ABS",
+            "LCD Speedometer",
+            "Suspensi empuk"
+        ],
+        "cc": 155,
+        "fuelType": "Bensin",
+        "transmission": "Otomatis"
+    },
+    {
+        "id": 5,
+        "name": "Honda PCX",
+        "category": "matic-premium",
+        "categoryLabel": "Matic Premium",
+        "image": "/motors/pcx.png",
+        "features": [
+            "Mesin 160cc",
+            "Smart Key",
+            "USB Charger",
+            "LED Lighting"
+        ],
+        "cc": 160,
+        "fuelType": "Bensin",
+        "transmission": "Otomatis"
+    },
+    {
+        "id": 6,
+        "name": "Yamaha Lexi",
+        "category": "matic-premium",
+        "categoryLabel": "Matic Premium",
+        "image": "/motors/lexi.png",
+        "features": [
+            "Mesin 125cc VVA",
+            "Bagasi super luas",
+            "Desain modern",
+            "Cocok touring"
+        ],
+        "cc": 125,
+        "fuelType": "Bensin",
+        "transmission": "Otomatis"
+    },
+    {
+        "id": 7,
+        "name": "Honda Scoopy",
+        "category": "stylish",
+        "categoryLabel": "Stylish",
+        "image": "/motors/scoopy.png",
+        "features": [
+            "Desain retro modern",
+            "Nyaman dikendarai",
+            "Pilihan warna cantik",
+            "Cocok untuk wanita"
+        ],
+        "cc": 110,
+        "fuelType": "Bensin",
+        "transmission": "Otomatis"
+    },
+    {
+        "id": 8,
+        "name": "Yamaha Gear",
+        "category": "stylish",
+        "categoryLabel": "Stylish",
+        "image": "/motors/gear.png",
+        "features": [
+            "Desain rugged",
+            "Ground clearance tinggi",
+            "Cocok segala medan",
+            "Tampilan gagah"
+        ],
+        "cc": 125,
+        "fuelType": "Bensin",
+        "transmission": "Otomatis"
+    },
+    {
+        "id": 9,
+        "name": "Honda CRF 150",
+        "category": "sport-trail",
+        "categoryLabel": "Sport/Trail",
+        "image": "/motors/crf150.png",
+        "features": [
+            "Mesin 150cc",
+            "Suspensi trail",
+            "Off-road ready",
+            "Torsi besar"
+        ],
+        "cc": 150,
+        "fuelType": "Bensin",
+        "transmission": "Manual"
+    }
+]

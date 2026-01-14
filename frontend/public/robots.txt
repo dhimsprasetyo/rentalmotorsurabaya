@@ -1,0 +1,40 @@
+# robots.txt for Rental Motor Surabaya RMR 2
+# https://rentalmotorsurabaya.com
+
+# Default rules for all bots
+User-agent: *
+Allow: /
+Disallow: /_next/static/
+Disallow: /api/
+Disallow: /*.json$
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://rentalmotorsurabaya.com/sitemap.xml
+
+# Host
+Host: https://rentalmotorsurabaya.com

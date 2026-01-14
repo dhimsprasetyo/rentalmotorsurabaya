@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-bg: #050505;
+  --dark-card: #121212;
+  --dark-border: #2a2a2a;
+  --luxury-gold: #D4AF37;
+  --luxury-gold-light: #F4DFB0;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A1A1A1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--luxury-gold);
+}
+
+/* Selection */
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: var(--luxury-gold-light);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--luxury-gold), var(--luxury-gold-light), var(--luxury-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% auto;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Glow Effects */
+.glow-gold {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-luxury-gold text-dark-bg font-bold py-3 px-8 rounded-full transition-all duration-500;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.btn-primary:hover {
+  @apply bg-luxury-gold-light scale-105;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+}
+
+.btn-primary:active {
+  @apply scale-95;
+}
+
+.btn-secondary {
+  @apply bg-transparent border border-luxury-gold/50 text-luxury-gold font-medium py-3 px-8 rounded-full transition-all duration-500;
+}
+
+.btn-secondary:hover {
+  @apply border-luxury-gold bg-luxury-gold/10 text-luxury-gold-light;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.btn-secondary:active {
+  @apply scale-95;
+}
+
+/* Glass Effect - Luxury */
+.glass {
+  background: rgba(18, 18, 18, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Glass Card with Hover */
+.glass-card {
+  @apply glass rounded-2xl transition-all duration-500;
+}
+
+.glass-card:hover {
+  @apply border-luxury-gold/30 bg-dark-card/80;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Animated Background Gradient */
+.animated-gradient {
+  background: linear-gradient(-45deg, #0a0a0a, #1a1a1a, #0f0f0f, #151515);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* WhatsApp Button Animation */
+.whatsapp-pulse {
+  animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}

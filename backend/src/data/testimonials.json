@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Andi Pratama",
+        "review": "Motor bersih dan terawat banget, helm lengkap 2 buah. Pelayanan ramah dan fast response. Saya sewa 5 hari untuk keliling Surabaya, tidak ada masalah sama sekali. Recommended banget!",
+        "rating": 5,
+        "date": "2 minggu lalu",
+        "source": "Google Maps"
+    },
+    {
+        "id": 2,
+        "name": "Sari Dewi",
+        "review": "Sewa motor buat keliling Surabaya selama 3 hari. Prosesnya gampang banget, cuma foto KTP terus motor langsung diantar ke hotel. Tepat waktu dan motornya wangi.",
+        "rating": 5,
+        "date": "1 bulan lalu",
+        "source": "Google Maps"
+    },
+    {
+        "id": 3,
+        "name": "Budi Santoso",
+        "review": "Harga terjangkau, motor bagus. Sudah langganan dari tahun lalu setiap kali ke Surabaya. Pasti balik lagi! NMAX-nya sangat nyaman untuk touring.",
+        "rating": 5,
+        "date": "3 minggu lalu",
+        "source": "Google Maps"
+    },
+    {
+        "id": 4,
+        "name": "Ratna Wijaya",
+        "review": "Pertama kali sewa motor di Surabaya dan langsung dapat yang bagus. Gratis helm, jas hujan, dan masker. Sangat membantu untuk mobilitas selama bisnis trip.",
+        "rating": 5,
+        "date": "1 bulan lalu",
+        "source": "Google Maps"
+    },
+    {
+        "id": 5,
+        "name": "Doni Setiawan",
+        "review": "Sewa PCX untuk 1 minggu. Kondisi motor prima, BBM irit. Antar jemput gratis ke Gubeng. Komunikasi dengan admin sangat mudah via WhatsApp.",
+        "rating": 5,
+        "date": "2 bulan lalu",
+        "source": "Google Maps"
+    },
+    {
+        "id": 6,
+        "name": "Maya Putri",
+        "review": "Scoopy yang saya sewa bagus banget, warnanya cantik. Cocok untuk cewek yang mau explore Surabaya. Harga weekend juga masih worth it.",
+        "rating": 5,
+        "date": "3 minggu lalu",
+        "source": "Google Maps"
+    },
+    {
+        "id": 7,
+        "name": "Rudi Hermawan",
+        "review": "Service 24 jam beneran! Saya ada masalah jam 10 malam dan langsung dibantu. Thankful banget sama pelayanannya. Definitely will recommend to friends.",
+        "rating": 5,
+        "date": "1 bulan lalu",
+        "source": "Google Maps"
+    },
+    {
+        "id": 8,
+        "name": "Fitri Handayani",
+        "review": "Sewa motor untuk anak yang kuliah di Surabaya. Per bulan harganya sangat reasonable. Motor terawat dan anak saya senang pakainya.",
+        "rating": 4,
+        "date": "2 bulan lalu",
+        "source": "Google Maps"
+    },
+    {
+        "id": 9,
+        "name": "Agus Prasetyo",
+        "review": "Udah beberapa kali sewa di sini. Konsisten kualitasnya. Motor selalu bersih, full bensin, dan siap pakai. Mantap!",
+        "rating": 5,
+        "date": "1 minggu lalu",
+        "source": "Google Maps"
+    }
+]
