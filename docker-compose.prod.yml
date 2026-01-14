@@ -1,0 +1,66 @@
+# Docker Compose for Self-Hosting with GHCR Images
+# Use this on your production server
+
+version: "3.9"
+
+services:
+  frontend:
+    image: ghcr.io/dhimsprasetyo/rentalmotorsurabaya/frontend:latest
+    container_name: rmr2_frontend
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=/api
+    depends_on:
+      - backend
+
+  backend:
+    image: ghcr.io/dhimsprasetyo/rentalmotorsurabaya/backend:latest
+    container_name: rmr2_backend
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - DATABASE_URL=postgresql://admin:secret@postgres:5432/rmr2
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:15
+    container_name: rmr2_db
+    restart: always
+    environment:
+      POSTGRES_DB: rmr2
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  nginx:
+    image: nginx:alpine
+    container_name: rmr2_nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx:/etc/nginx/conf.d
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    depends_on:
+      - frontend
+      - backend
+
+  # Optional: Certbot for SSL
+  certbot:
+    image: certbot/certbot
+    container_name: rmr2_certbot
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+volumes:
+  pgdata:
